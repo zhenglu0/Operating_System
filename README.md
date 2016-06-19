@@ -3,12 +3,6 @@
 Name: Zheng Luo
 
 
-How long did the lab take?:
-
-50 Hours in total, lab part1 and part2 in total.
-
-
-
 Does your lab work as expected?
 
 Almost as I expected.
