@@ -1,4 +1,4 @@
-/* 
+/*
    xssh.c for Operating System Lab
    October 5 2011 Zheng Luo
    Modified by 罗铮 on 03/19/14.
@@ -25,9 +25,9 @@ struct variables {
 } words [MAXTOKEN];/* Storing variables */
 
 /* implementation of chdir */
-void do_cd(char *argv[]); 
+void do_cd(char *argv[]);
 /* implementation of setting variables */
-void do_set(char *argv[]); 
+void do_set(char *argv[]);
 /* implementation of seting showing variables*/
 void do_show(char *argv[]);
 /* implementation of seting environment variables */
@@ -69,7 +69,7 @@ int main()
 {
     char cmd[BUFFERSIZE]; /*command input buffer*/
     /* array of pointers to command line tokens */
-    char *cmd_arg[MAXTOKEN]; 
+    char *cmd_arg[MAXTOKEN];
     /* command line token delimiters */
     char *delimiters = " \t\n";
     int  cmdlen; /* parse index */
@@ -125,7 +125,7 @@ int main()
                     else if(strcmp(cmd_arg[i],"$?")==0)
                     {
                         printf("Decimal value returned by the "
-                                "last foreground command is: %d \n", 
+                                "last foreground command is: %d \n",
                                 valueReturn);
                         status = -1;
                     }
@@ -151,7 +151,7 @@ int main()
                 }
             }
         }
-        /* no value found then continue or 
+        /* no value found then continue or
            something int the command line*/
         if (status == -1)
         {
@@ -466,7 +466,7 @@ void execute_foreground(char *argv[])
     }
 }
 
-/* implementation of execute external 
+/* implementation of execute external
    command or applications containing pipes */
 void execute_pipe(char *argv[])
 {
@@ -580,7 +580,7 @@ void execute_pipe(char *argv[])
 int execute_background(char* argv[])
 {
     /* array of pointers to command line tokens */
-    char *argvb [MAXTOKEN]; 
+    char *argvb [MAXTOKEN];
     pidb=fork();
     if(pidb<0)
     {
