@@ -659,14 +659,3 @@ void waitprocess(char *argv[])
         printf("Please input the correct command\n");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
