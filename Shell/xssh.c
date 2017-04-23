@@ -2,7 +2,11 @@
    xssh.c for Operating System Lab
    October 5 2011 Zheng Luo
    Modified by 罗铮 on 03/19/14.
- */
+
+   Good reference links about pipes and redirections:
+   https://brandonwamboldt.ca/how-linux-pipes-work-under-the-hood-1518/
+   https://brandonwamboldt.ca/how-bash-redirection-works-under-the-hood-1512/
+*/
 
 #include   <sys/types.h>
 #include   <sys/stat.h>
