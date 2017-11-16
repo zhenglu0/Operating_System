@@ -1,4 +1,4 @@
-## Operating_System class labs
+## Operating System Class Labs
 
 Name: Zheng Luo
 
